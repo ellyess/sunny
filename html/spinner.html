@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml="lang" lang="ko">
+<head>
+    <title>로딩 스피너-골프존</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="오은선" />
+	<link rel="stylesheet" href="../css/common.css">
+	<style type="text/css">
+        * {margin:0;padding:0}
+        /* 로딩 스피너 */
+        .dims.loading {display:block;position:fixed;z-index:300;right:0;bottom:0;left:0;top:0;background:rgba(0,0,0,0.6)}
+        .spinner {position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px}
+        .spinner2 {position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background-color:#fff;border-radius:10px;color:transparent;text-indent:-7000px;}
+        .spinner2 em {display:block;width:80px;height:80px;border-radius:10px;opacity:0;background:url(../images/spinner/spinner_1.png) no-repeat 50% 50%;background-size:26px auto;animation:spinner 1s infinite;-webkit-animation:spinner 1s infinite;}
+
+        @keyframes spinner {
+            0%  {opacity:0;background:url(../images/spinner/spinner_1.png) no-repeat 50% 50%;background-size:26px auto}
+            5%  {opacity:.2;background:url(../images/spinner/spinner_2.png) no-repeat 50% 50%;background-size:26px auto}
+            10% {opacity:.4;background:url(../images/spinner/spinner_3.png) no-repeat 50% 50% ;background-size:26px auto}
+            15% {opacity:.6;background:url(../images/spinner/spinner_4.png) no-repeat 50% 50% ;background-size:26px auto}
+            20% {opacity:.8;background:url(../images/spinner/spinner_5.png) no-repeat 50% 50%;background-size:26px auto}
+            25% {opacity:.9;background:url(../images/spinner/spinner_6.png) no-repeat 50% 50% ;background-size:26px auto}
+            30% {opacity:1;background:url(../images/spinner/spinner_7.png) no-repeat 50% 50% ;background-size:26px auto}
+        }
+        @-webkit-keyframes spinner {
+            0%  {opacity:0;background:url(../images/spinner/spinner_1.png) no-repeat 50% 50%;background-size:26px auto}
+            5%  {opacity:.2;background:url(../images/spinner/spinner_2.png) no-repeat 50% 50%;background-size:26px auto}
+            10% {opacity:.4;background:url(../images/spinner/spinner_3.png) no-repeat 50% 50% ;background-size:26px auto}
+            15% {opacity:.6;background:url(../images/spinner/spinner_4.png) no-repeat 50% 50% ;background-size:26px auto}
+            20% {opacity:.8;background:url(../images/spinner/spinner_5.png) no-repeat 50% 50%;background-size:26px auto}
+            25% {opacity:.9;background:url(../images/spinner/spinner_6.png) no-repeat 50% 50% ;background-size:26px auto}
+            30% {opacity:1;background:url(../images/spinner/spinner_7.png) no-repeat 50% 50% ;background-size:26px auto}
+        }
+
+	</style>
+</head>
+<body>
+    <div class="dims loading">
+        <span class="spinner2"><em></em>로딩 중</span>
+    </div>
+</body>
+</html>
