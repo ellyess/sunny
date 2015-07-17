@@ -25,7 +25,7 @@
 	.script {display:block; color:#000}
 </style>
 <!-- 이하는 golfzon 브런치에서 생성한 라인 07-17 오전 11:21 -->
-<script type="text/javascript">
+<script type="text/javascript">    
 	<!--
 		function init_proc()
 		{
@@ -132,8 +132,18 @@
 </head>
 <body onload="">
 <div id="g_header">
-	<h1>education list</h1>
+    <h1>education list</h1>
+    <a href="#" class="link1">1111</a>
+    <a href="#" class="link2">2222</a>
 </div>
+<script>
+    $(".link1").on("click", function(e){
+        console.log(e.target)
+    })
+    $(document).on("click",".link1", function(e){
+        console.log(e.target)
+    })    
+</script>
 <div id="g_body">
 	<div class="contents">
 		<h3 style="font-size:36px; font-weight:bold;">Page List [<span id="end"></span>/<span id="total"></span>]</h3>
